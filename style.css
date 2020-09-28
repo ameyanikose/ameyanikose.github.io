@@ -4,15 +4,15 @@
   box-sizing: border-box;
 
 }
-﻿body {
+body {
   font-family: 'Inter', sans-serif;
 }
 
 header{
   font-family: 'Inter', sans-serif;
+  font-weight: 400;
   display: flex;
-  background-color: black;
-  color: white;
+  color: black;
   width: 55%;
   margin: auto;
   height: 10vh;
@@ -25,6 +25,9 @@ header{
 
 .logo{
   flex: 0.7;
+  font-size: 24px;
+  font-weight: 600;
+
 }
 
 nav{
@@ -50,28 +53,47 @@ section{
   margin: auto;
   font-size: 48px;
   font-weight: 600;
-  align-items: center;
+}
 
+.arrow{
+  display: flex;
+  flex: 1;
+  padding-top: 180px;
+  justify-content: center;
 }
 
 .into-text {
   padding-top: 200px;
-  color: white;
 }
 
 @media screen and (max-width: 1024px) {
   section{
     font-size: 36px;
   }
+  .logo {
+    font-size: 18px;
+  }
 }
 
+@media screen and (max-width: 800px) {
+  section{
+    font-size: 30px
+    ;
+  }
+  .logo {
+    font-size: 18px;
+  }
+}
 
 
 
 
 @media screen and (max-width: 600px) {
   section{
-    font-size: 28px
+    font-size: 24px
     ;
+  }
+  .logo {
+    font-size: 14px;
   }
 }
