@@ -4,14 +4,15 @@
   box-sizing: border-box;
 
 }
-﻿body {
+body {
   font-family: 'Inter', sans-serif;
+  margin: 0%;
 }
 
 header{
   font-family: 'Inter', sans-serif;
-  display: flex;
   background-color: black;
+  display: flex;
   color: white;
   width: 50%;
   margin: auto;
@@ -31,7 +32,6 @@ header{
 
 nav{
   flex: 0.2;
-  padding: 5px;
   justify-content: space-around;
 }
 
@@ -46,24 +46,60 @@ nav{
   text-decoration:none;
 
 }
+main{
+  padding: 0%; margin: 0%;
+  background-color: black;
+}
 
 section{
   font-family: 'Inter', sans-serif;
   width: 50%;
   margin: auto;
-  font-size: 48px;
+  font-size: 54px;
   font-weight: 600;
   align-items: center;
-
+  line-height: 110%;
+  padding-bottom: 20vh;
 }
+
 .arrow{
   display: flex;
   justify-content: center;
-  padding-top: 160px;
+  padding-top: 16vh;
 }
-.into-text {
-  padding-top: 200px;
+.intro-text {
+  padding-top: 15vh;
   color: white;
+}
+.projects{
+  width: 50%;
+  margin: auto;
+  padding-top: 10vh;
+  font-weight: 600;
+  font-size: 48px;
+}
+
+.work {
+  display: flex;
+  width: 50%;
+  margin: auto; 
+  height: 1820px;
+  justify-content: space-between;
+}
+
+.card {
+  margin-top: 10vh;
+  width: 400px;
+  height: 300px;
+  border-radius: 5px;
+
+}
+.card-2 {
+  margin-top: 10vh;
+  width: 400px;
+  height: 300px;
+  border-radius: 5px;
+ 
 }
 
 @media screen and (max-width: 1024px){
@@ -83,7 +119,14 @@ section{
   .logo{
     font-size: 18px;
   }
-
+  .work{
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .projects{
+    width: 70%;
+    font-size: 28px;
+  }
 }
 
 @media screen and (max-width: 600px){
@@ -96,5 +139,8 @@ section{
     margin: auto;
     font-size: 24px;
   }
-}
+  .work {
+    width: 70%;
+  }
+
 }
