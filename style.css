@@ -126,6 +126,7 @@ section{
   .work{
     flex-direction: column;
     justify-content: flex-start;
+    align-items: center;
   }
   .projects{
     width: 70%;
