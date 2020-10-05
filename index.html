@@ -11,35 +11,36 @@
 
 </head>
 <body>
-  
-   
     <main>
         <header>
             <div class="logo">
-                <p>ameyanikose</p>
+               <p>ameyanikose</p>
             </div>
                 <nav>
                     <ul class="nav-links">
-                        <li ><a class="nav-link" href="#">about</a></li>
-                        <li ><a class="nav-link" href="#">work</a></li>
+                        <li ><a class="nav-link" href="#intro">about</a></li>
+                        <li ><a class="nav-link" href="#work">work</a></li>
                     </ul>
                 </nav>
         </header>
-      <section class="intro">
+      <section id="intro">
         <p class="intro-text"> hello! i am a <br>design apprentice <br> with interests in <br> experience design and <br> visual communication.</p>
         <div class="arrow">
-          <img src="Arrow.png" alt="Scroll Down" width="25px" height="25px">
+         <a href="#work"> <img src="Arrow.png" alt="Scroll Down" width="25px" height="25px"> </a>
         </div>
              
       </section>
     </main>
 
-    <div><p class="projects">projects</p></div>
+    <div><p id="work" class="projects">projects</p></div>
     <div class="work">
        <div> <img src="placeholder.jpg" alt="Dp" class="card"> </div>
        <div> <img src="placeholder.jpg" alt="Dp" class="card-2"> </div>
     </div>
-   
+
+
+   <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+   <script src="app.js"></script>
 </body> 
 
 </html>
