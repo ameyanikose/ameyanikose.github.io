@@ -1,3 +1,3 @@
-const scroll = new SmoothScroll('.nav-links, .arrow a[href*="#"]' ,{
+const scroll = new SmoothScroll('.nav-links, .arrow, #work, a[href*="#"]' ,{
     speed: 700
 });
