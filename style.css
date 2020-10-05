@@ -31,13 +31,13 @@ header{
 }
 
 nav{
-  flex: 0.2;
+  flex: 0.3;
   justify-content: space-around;
-  margin-left: 5px;
 }
 
 .nav-links{
   justify-content: space-around;
+  align-items: flex-end;
   list-style: none;
   width: 100%;
   font-size: 16px;
@@ -146,7 +146,7 @@ section{
 
 @media screen and (max-width: 600px){
   header{
-    width: 90%;
+    width: 80%;
     margin: auto;
   }
   section{
