@@ -76,7 +76,7 @@ section{
   margin: auto;
   padding-top: 10vh;
   font-weight: 600;
-  font-size: 48px;
+  font-size: 28px;
 }
 
 .work {
@@ -103,6 +103,12 @@ section{
   object-fit: cover;
   
 }
+@media screen and (max-width: 1440px){
+  .work{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
 
 @media screen and (max-width: 1024px){
   section{
@@ -110,7 +116,7 @@ section{
   }
   .work{
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
   }
   .nav-links{
     font-size: 15px;
