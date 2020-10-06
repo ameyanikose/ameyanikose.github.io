@@ -18,6 +18,8 @@ header{
   margin: auto;
   height: 10vh;
   align-items: center;
+  animation-name: fadeup;
+  animation-duration: 4s;
 
 }
 .logo,.nav-links{
@@ -66,10 +68,14 @@ section{
   display: flex;
   justify-content: center;
   padding-top: 16vh;
+  animation-name: fadeup;
+  animation-duration: 4s;
 }
 .intro-text {
   padding-top: 15vh;
   color: white;
+  animation-name: fadeup;
+  animation-duration: 2s;
 }
 .projects{
   width: 50%;
@@ -103,6 +109,32 @@ section{
   object-fit: cover;
   
 }
+
+span{
+  opacity: 0;
+  transition: all 1s ease;
+  transform: translateY(10px);
+  display: inline-block;
+
+}
+.fade{
+opacity: 1;
+transform: translateY(0px);
+}
+
+
+@keyframes fadeup{
+  from { opacity: 0;
+    transition: all 1s ease;
+    transform: translateY(10px);}
+  to { 
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+
+
 @media screen and (max-width: 1440px){
   .work{
     flex-direction: column;
