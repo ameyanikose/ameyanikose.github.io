@@ -126,7 +126,7 @@ transform: translateY(0vh);
 @keyframes fadeup{
   from { opacity: 0;
     transition: all 1s ease;
-    transform: translateY(10px);}
+    transform: translateY(5px);}
   to { 
     opacity: 1;
     transform: translateY(0px);
