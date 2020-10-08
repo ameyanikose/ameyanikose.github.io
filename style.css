@@ -89,7 +89,8 @@ section{
   display: grid;
   grid-template-columns: repeat(auto-fit, 400px);
   grid-column-gap: 30px;
-  grid-template-rows: repeat(auto-fit, 350px);
+  grid-template-rows: repeat(auto-fit, 300px);
+  grid-row-gap: 30px;
   width: 50%;
   margin: auto; 
   height: 100vh;
