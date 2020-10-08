@@ -86,25 +86,30 @@ section{
 }
 
 .work {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 400px);
+  grid-column-gap: 30px;
+  grid-template-rows: repeat(auto-fit, 350px);
   width: 50%;
   margin: auto; 
-  height: 182vh;
-  justify-content: space-between;
+  height: 100vh;
+  justify-items: center;
 }
 
 .card {
+  background-color: lightblue;
   margin-top: 10vh;
-  width: 400px;
   height: 300px;
+  width: 400px;
   border-radius: 5px;
   object-fit: cover;
 
 }
-.card-2 {
+.card2 {
+  background-color: lightcoral;
   margin-top: 10vh;
-  width: 400px;
   height: 300px;
+  width: 400px;
   border-radius: 5px;
   object-fit: cover;
   
@@ -136,20 +141,13 @@ transform: translateY(0vh);
 
 
 @media screen and (max-width: 1440px){
-  .work{
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-  }
+  
 
 @media screen and (max-width: 1024px){
   section{
     font-size: 36px;
   }
-  .work{
-    flex-direction: column;
-    justify-content: center;
-  }
+ 
   .nav-links{
     font-size: 15px;
   }
@@ -166,11 +164,7 @@ transform: translateY(0vh);
   .logo{
     font-size: 18px;
   }
-  .work{
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-  }
+  s
   .projects{
     width: 70%;
     font-size: 28px;
@@ -191,7 +185,7 @@ transform: translateY(0vh);
     font-size: 24px;
   }
   .work {
-    width: 90%;
+    width: 80%;
   }
   .nav-links{
     font-size: 12px;
