@@ -98,6 +98,8 @@ section{
   width: 50%;
   margin: auto; 
   justify-items: center;
+  padding-bottom: 10vh;
+
 }
 
 .card {
@@ -117,6 +119,34 @@ section{
 }
 
 
+footer{
+  background-color: black;
+  color: white;
+  height: 30vh;
+  margin: auto;
+  align-content: center;
+  align-items: center;
+}
+
+.footer-text{
+  background-color: black;
+  color: white;
+  width: 50%;
+  margin: auto;
+  padding-top: 10vh;
+  display: flex;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.end-text{
+  background-color: black;
+  color: #9c9c9c;
+  width: 50%;
+  margin: auto;
+  padding-top: 2vh;
+  display: flex;
+}
 
 span{
   opacity: 0;
