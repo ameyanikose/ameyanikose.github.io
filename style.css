@@ -20,15 +20,15 @@ header{
   align-items: center;
   animation-name: fadeup;
   animation-duration: 4s;
-
 }
+
 .logo,.nav-links{
   display: flex;
 }
 
 .logo{
   flex: 0.7;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 24px;
 }
 
@@ -41,6 +41,7 @@ nav{
   list-style: none;
   width: 100%;
   font-size: 16px;
+  font-weight: 400;
 }
 .nav-link{
   color: #9c9c9c;
@@ -81,40 +82,41 @@ section{
   width: 50%;
   margin: auto;
   padding-top: 10vh;
+  padding-bottom: 10vh;
   font-weight: 600;
   font-size: 28px;
+  animation-name: fadeup;
+  animation-duration: 4s;
 }
 
 .work {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 400px);
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-column-gap: 30px;
-  grid-template-rows: repeat(auto-fit, 300px);
+  grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
   grid-row-gap: 30px;
   width: 50%;
   margin: auto; 
-  height: 100vh;
   justify-items: center;
 }
 
 .card {
-  background-color: lightblue;
-  margin-top: 10vh;
-  height: 300px;
-  width: 400px;
   border-radius: 5px;
   object-fit: cover;
-
+  width: 100%;
+  animation-name: fadeup;
+  animation-duration: 4s;
 }
 .card2 {
-  background-color: lightcoral;
-  margin-top: 10vh;
-  height: 300px;
-  width: 400px;
   border-radius: 5px;
   object-fit: cover;
+  width: 100%;
+  animation-name: fadeup;
+  animation-duration: 4s;
   
 }
+
+
 
 span{
   opacity: 0;
@@ -141,8 +143,14 @@ transform: translateY(0vh);
 
 
 
-@media screen and (max-width: 1440px){
-  
+@media screen and (max-width: 1280px){
+  section{
+    font-size: 40px;
+  }
+  .logo{
+    font-size: 22px;
+  }
+}
 
 @media screen and (max-width: 1024px){
   section{
@@ -152,9 +160,12 @@ transform: translateY(0vh);
   .nav-links{
     font-size: 15px;
   }
+  .logo{
+    font-size: 20px;
+  }
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 850px){
   header{
     width: 70%;
     margin: auto;
@@ -175,7 +186,7 @@ transform: translateY(0vh);
   }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 665px){
   header{
     width: 80%;
     margin: auto;
