@@ -107,14 +107,14 @@ section{
   width: 100%;
   animation-name: fadeup;
   animation-duration: 4s;
+  transition: 0.2s ease;
+  cursor: pointer;
 }
-.card2 {
-  border-radius: 5px;
-  object-fit: cover;
-  width: 100%;
-  animation-name: fadeup;
-  animation-duration: 4s;
-  
+
+.card:hover{
+  transform: translateZ(5px);
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 20px gray;
 }
 
 
@@ -169,7 +169,6 @@ transform: translateY(0vh);
     transform: translateY(0px);
   }
 }
-
 
 
 @media screen and (max-width: 1280px){
