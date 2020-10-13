@@ -226,7 +226,9 @@ transform: translateY(0vh);
     margin: auto;
   }
   section{
-    font-size: 28px;
+    width: 70%;
+    margin: auto;
+    font-size: 36px;
   }
   .logo{
     font-size: 18px;
@@ -247,9 +249,9 @@ transform: translateY(0vh);
     margin: auto;
   }
   section{
-    width: 70%;
+    width: 80%;
     margin: auto;
-    font-size: 24px;
+    font-size: 30px;
   }
   .work {
     width: 90%;
