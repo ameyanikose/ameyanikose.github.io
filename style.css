@@ -40,7 +40,7 @@ nav{
   list-style: none;
   width: 100%;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
 }
 .nav-link{
   color: #9c9c9c;
@@ -80,8 +80,8 @@ section{
 .projects{
   width: 50%;
   margin: auto;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
   font-weight: 600;
   font-size: 28px;
   animation-name: fadeup;
@@ -101,19 +101,48 @@ section{
 
 }
 
-.card {
+.container {
   border-radius: 5px;
   object-fit: cover;
   width: 100%;
   transition: 0.2s ease;
   cursor: pointer;
+  color: black;
+  text-decoration: none;
+  box-shadow: 0px 2px 4px rgba(179, 179, 179, 0.5);
+}
+.card {
+  position: static;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  object-fit: cover;
+  width: 100%;
+}
+.card-text {
+  padding-top: 1.5vh;
+  padding-left: 2vh;
+  padding-right: 2vh;
+  padding-bottom: 1vh;
+  font-weight: 600;
+  font-size: 18px;
 }
 
-.card:hover{
+.card-text-description{
+  color: #9c9c9c;
+  padding-left: 2vh;
+  padding-bottom: 2.5vh;
+  padding-right: 2vh;
+  font-weight: 600;
+  font-size: 15px;
+
+}
+
+.container:hover{
   transform: translateZ(5px);
   transform: translateY(-5px);
   box-shadow: 0px 10px 15px rgba(179, 179, 179, 0.5);
 }
+
 
 
 footer{
