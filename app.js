@@ -46,11 +46,11 @@ $(document).ready(function(){
     $(".proj-nav-link").click(function(){
        const name = $(this).attr("data-filter");
         if (name == "all"){
-         $(".card-container").hide().fadeIn(800);
+         $(".card-container").hide().fadeIn(500);
         }
         else{
          $(".card-container").not("."+name).hide();  
-         $(".card-container").filter("."+name).hide().fadeIn(800);
+         $(".card-container").filter("."+name).hide().fadeIn(500);
         } 
 
     }) 
