@@ -39,14 +39,12 @@
 <!-- Projects -->
 
     <div><p id="work" class="projects">Projects</p>
-        <div>
-        <ul class="proj-links">
-            <li ><a class="proj-nav-link" href="#">work</a></li>
-            <li ><a class="proj-nav-link" href="#">work</a></li>
-            <li ><a class="proj-nav-link" href="#">work</a></li>
-            <li ><a class="proj-nav-link" href="#">work</a></li>
+        <div class="proj-links">
+            <a class="proj-nav-link active" data-filter="all">All</a>
+            <a class="proj-nav-link" data-filter="one">one</a>
+            <a class="proj-nav-link" data-filter="two">two</a>
+            <a class="proj-nav-link" data-filter="three">three</a>
             
-        </ul>
         </div>
     </div>
 
@@ -54,22 +52,22 @@
 <!-- Cards -->
 
     <div class="work">
-        <a class="card-container" href="#nestegg">
+        <a class="container one" href="#nestegg">
             <img class="card" src="placeholder.jpg" alt=" ">
             <p class="card-text">Nestegg</p>
              <p class="card-text-description">An app to inculcate banking habits in minors and to help them keep a record of their expenditure.</p>
         </a>
-        <a class="card-container" href="#turtle">
+        <a class="container two" href="#turtle">
             <img class="card" src="placeholder.jpg" alt=" ">
             <p class="card-text">Turtle</p>
              <p class="card-text-description">An olympiad designed to promote value education amongst students of different age groups.</p>
         </a>
-        <a class="card-container" href="#vave">
+        <a class="container three" href="#vave">
             <img class="card" src="placeholder.jpg" alt=" ">
             <p class="card-text">Vave</p>
              <p class="card-text-description">A gesture-based, intuitive musical instrument with immersive audio-reactive visuals.</p>
         </a>
-        <a class="card-container" href="#crediit">
+        <a class="container one" href="#crediit">
             <img class="card" src="placeholder.jpg" alt=" ">
             <p class="card-text">Crediit</p>
              <p class="card-text-description">An app for IIT Bombay students and merchants to keep a record of the credit based transactions.</p>
@@ -88,8 +86,9 @@
     
 <!-- Script -->
    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
    <script src="app.js"></script>
-
+ 
 
 </body> 
 </html>

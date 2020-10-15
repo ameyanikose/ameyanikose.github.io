@@ -38,3 +38,22 @@ function complete (){
 clearInterval(timer);
 timer=null;
 }
+
+
+//Filter
+
+$(document).ready(function(){
+    $(".proj-nav-link").click(function(){
+       var name = $(this).attr("data-filter");
+        if (name == "all"){
+            $(".container").show("10");
+        }
+        else{
+         $(".container").not("."+name).hide("10") ;  
+         $(".container").filter("."+name).show("10") ;  
+        } 
+    }) 
+})
+$(".proj-links a").click(function(){
+    $(this).addClass("active").siblings().removeClass("active");
+})
