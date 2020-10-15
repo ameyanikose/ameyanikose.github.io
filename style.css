@@ -292,7 +292,7 @@ main{
             .logo{
               font-size: 18px;
             }
-            s
+            
             .projects{
               width: 70%;
               font-size: 28px;
@@ -300,7 +300,9 @@ main{
             .nav-links{
               font-size: 14px;
             }
-
+            .proj-links{
+              width: 70%;
+            }
           }
 
           @media screen and (max-width: 665px){
@@ -319,6 +321,20 @@ main{
             .nav-links{
               font-size: 12px;
             }
+            .projects{
+              width: 80%;
+              font-size: 24px;
+            }
+            .proj-links{
+              width: 90%;
+            }
+            .footer-text{
+              width: 80%;
+              font-size: 24px;
+            }
+            .end-text{
+              width: 80%;
+            }
           }
 
           @media screen and (max-width: 405px){
@@ -336,5 +352,7 @@ main{
             }
             .nav-links{
               font-size: 12px;
+            }
+            
             }
           }
