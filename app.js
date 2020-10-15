@@ -46,14 +46,16 @@ $(document).ready(function(){
     $(".proj-nav-link").click(function(){
        const name = $(this).attr("data-filter");
         if (name == "all"){
-            $(".container").show();
+         $(".card-container").hide().fadeIn(800);
         }
         else{
-         $(".container").not("."+name).hide() ;  
-         $(".container").filter("."+name).show() ;  
+         $(".card-container").not("."+name).hide();  
+         $(".card-container").filter("."+name).hide().fadeIn(800);
         } 
+
     }) 
 })
+       
 $(".proj-links a").click(function(){
     $(this).addClass("active").siblings().removeClass("active");
 })

@@ -117,6 +117,8 @@ main{
           .proj-links a.active{
             border-bottom: 2px solid currentColor;
             color: black;
+            animation-name: fade;
+            animation-duration: 1.5s;
           }
           
     
@@ -134,9 +136,10 @@ main{
             margin: auto; 
             justify-items: center;
             padding-bottom: 10vh;
+            
           }
 
-          .container {
+          .card-container {
             border-radius: 5px;
             object-fit: cover;
             width: 100%;
@@ -177,6 +180,7 @@ main{
             transform: translateZ(5px);
             transform: translateY(-5px);
             box-shadow: 0px 10px 15px rgba(179, 179, 179, 0.5);
+            opacity: 70%;
           }
 
 
@@ -236,6 +240,15 @@ main{
             }
           }
 
+          @keyframes fade{
+            from { color: #9c9c9c;
+              transition: all 1s ease;
+              }
+            to { 
+              color: black;
+            }
+          }
+          
 /* Responsivity */
 
           @media screen and (max-width: 1280px){
