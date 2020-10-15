@@ -44,13 +44,13 @@ timer=null;
 
 $(document).ready(function(){
     $(".proj-nav-link").click(function(){
-       var name = $(this).attr("data-filter");
+       const name = $(this).attr("data-filter");
         if (name == "all"){
-            $(".container").show("10");
+            $(".container").show();
         }
         else{
-         $(".container").not("."+name).hide("10") ;  
-         $(".container").filter("."+name).show("10") ;  
+         $(".container").not("."+name).hide() ;  
+         $(".container").filter("."+name).show() ;  
         } 
     }) 
 })
