@@ -37,6 +37,7 @@ main{
             flex: 0.7;
             font-weight: 500;
             font-size: 24px;
+            
           }
 
           nav{
@@ -47,6 +48,7 @@ main{
             justify-content: space-around;
             list-style: none;
             width: 100%;
+            padding-left: 20%;
             font-size: 16px;
             font-weight: 600;
           }
@@ -67,14 +69,15 @@ main{
             font-weight: 600;
             align-items: center;
             line-height: 120%;
-            padding-top: 10vh;
+            padding-top: 8vh;
             padding-bottom: 20vh;
           }
 
           .arrow{
             display: flex;
             justify-content: center;
-            padding-top: 16vh;
+            padding-top: 10vh;
+            padding-bottom: 5vh;
             animation-name: fadeup;
             animation-duration: 4s;
           }
@@ -93,7 +96,7 @@ main{
             margin: auto;
             padding-top: 5vh;
             padding-bottom: 5vh;
-            font-weight: 600;
+            font-weight: 700;
             font-size: 24px;
           }
 
@@ -172,7 +175,7 @@ main{
             padding-bottom: 2.5vh;
             padding-right: 2vh;
             font-weight: 600;
-            font-size: 15px;
+            font-size: 14px;
 
           }
 
@@ -211,10 +214,16 @@ main{
             color: #9c9c9c;
             width: 50%;
             margin: auto;
-            padding-top: 2vh;
+            padding-top: 4vh;
             display: flex;
+            font-weight: 600;
+          
           }
-
+          .footer-text a{
+            color: #9c9c9c;
+            text-decoration:none;
+          }
+          
 
 /* Introduction Animation and Other Animations */
           span{
@@ -262,7 +271,7 @@ main{
 
           @media screen and (max-width: 1024px){
             section{
-              font-size: 36px;
+              font-size: 38px;
             }
             
             .nav-links{
@@ -354,3 +363,19 @@ main{
             
             }
           }
+
+/* 
+          #myVideo {
+            scale: 0.1;
+          }
+          .video{
+          position: absolute;
+          justify-content: center;
+          width: 10px;
+          height: 10px;
+          opacity: 10%;
+          }
+      
+          .drift{
+            scale: 0.5;
+          } */

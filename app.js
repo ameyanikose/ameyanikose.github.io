@@ -30,8 +30,12 @@ function onTick(){
     const span = text.querySelectorAll('span')[char];
     span.classList.add("fade");
     char++
-    complete;
-    return; 
+    if (char > 97){
+        complete();
+        return; 
+    
+    }
+    
 }
 
 function complete (){
