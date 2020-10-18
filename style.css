@@ -280,6 +280,13 @@ main{
             .logo{
               font-size: 20px;
             }
+            .projects{
+              width: 70%;
+              font-size: 28px;
+            }
+            .proj-links{
+              width: 70%;
+            }
             .work{grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
               grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
             }
@@ -299,11 +306,7 @@ main{
             .logo{
               font-size: 18px;
             }
-            
-            .projects{
-              width: 70%;
-              font-size: 28px;
-            }
+          
             .nav-links{
               font-size: 14px;
             }
@@ -333,7 +336,10 @@ main{
               font-size: 24px;
             }
             .proj-links{
-              width: 90%;
+              width: 80%;
+            flex-direction: column;
+            align-items: flex-start;
+            line-height: 5vh;
             }
             .footer-text{
               width: 80%;
@@ -360,7 +366,8 @@ main{
             .nav-links{
               font-size: 12px;
             }
-            
+            .proj-links{
+              width: 80%;
             }
           }
 
