@@ -104,7 +104,7 @@ main{
             display: flex;
             width: 50%;
             margin: auto;
-            padding-bottom: 5vh;
+            padding-bottom: 4vh;
             font-size: 16px;
             font-weight: 600;
             list-style: none;
@@ -131,9 +131,9 @@ main{
 /* Cards */
           .work {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat(2, minmax(350px, 1fr));
             grid-column-gap: 3vh;
-            grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-rows: repeat(2, minmax(300px, 1fr));
             grid-row-gap: 3vh;
             width: 50%;
             margin: auto; 
@@ -153,6 +153,20 @@ main{
             box-shadow: 0px 2px 4px rgba(179, 179, 179, 0.5);
         
           }
+
+          .card-container-hidden{
+            display: none;
+            border-radius: 5px;
+            object-fit: cover;
+            width: 100%;
+            transition: 0.2s ease;
+            cursor: pointer;
+            color: black;
+            text-decoration: none;
+            box-shadow: 0px 2px 4px rgba(179, 179, 179, 0.5);
+
+          }
+
           .card {
             position: static;
             border-top-left-radius: 5px;
@@ -160,6 +174,7 @@ main{
             object-fit: cover;
             width: 100%;
           }
+
           .card-text {
             padding-top: 1.5vh;
             padding-left: 2vh;
@@ -185,7 +200,12 @@ main{
             box-shadow: 0px 10px 15px rgba(179, 179, 179, 0.5);
             opacity: 70%;
           }
-
+          .card-container-hidden:hover{
+            transform: translateZ(5px);
+            transform: translateY(-5px);
+            box-shadow: 0px 10px 15px rgba(179, 179, 179, 0.5);
+            opacity: 70%;
+          }
           .show-more {
             display: flex;
             margin: auto;
@@ -285,6 +305,10 @@ main{
             .logo{
               font-size: 22px;
             }
+            .work{
+              grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+              grid-template-rows: repeat(auto-fit, minmax(350px,1fr));
+            }
           }
 
           @media screen and (max-width: 1024px){
@@ -305,10 +329,8 @@ main{
             .proj-links{
               width: 70%;
             }
-            .work{grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-              grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
-            }
             
+           
           }
 
           @media screen and (max-width: 850px){
