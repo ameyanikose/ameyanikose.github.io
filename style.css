@@ -25,8 +25,7 @@ main{
             margin: auto;
             height: 10vh;
             align-items: center;
-            animation-name: fadeup;
-            animation-duration: 4s;
+           
           }
 
           .logo,.nav-links{
@@ -37,6 +36,8 @@ main{
             flex: 0.7;
             font-weight: 500;
             font-size: 24px;
+            animation-name: fadeup;
+            animation-duration: 4s;
             
           }
 
@@ -51,6 +52,8 @@ main{
             padding-left: 20%;
             font-size: 16px;
             font-weight: 600;
+            animation-name: fadeup;
+            animation-duration: 4s;
           }
           .nav-link{
             color: #9c9c9c;

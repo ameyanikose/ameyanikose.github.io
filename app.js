@@ -59,6 +59,7 @@ $(document).ready(function(){
         else{
          $(".show-more").hide();   
          $(".card-container-hidden").css("display", "block"); 
+         $(".work").css("padding-bottom", "10vh");
          $(".card-container").not("."+name).hide();  
          $(".card-container").filter("."+name).hide().fadeIn(500);
          $(".card-container-hidden").not("."+name).hide();  
