@@ -37,7 +37,7 @@
               font-weight: 500;
               font-size: 24px;
               animation-name: fadeup;
-              animation-duration: 4s;
+              animation-duration: 1s;
               
             }
   
@@ -53,7 +53,7 @@
               font-size: 16px;
               font-weight: 600;
               animation-name: fadeup;
-              animation-duration: 4s;
+              animation-duration: 1s;
             }
             .nav-link{
               color: #9c9c9c;
