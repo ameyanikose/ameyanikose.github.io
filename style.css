@@ -37,7 +37,9 @@ main{
             font-weight: 500;
             font-size: 24px;
             animation-name: fadeup;
-            animation-duration: 4s;
+            animation-duration: 3s;
+            color: white;
+            text-decoration:none;
             
           }
 

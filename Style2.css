@@ -37,8 +37,9 @@
               font-weight: 500;
               font-size: 24px;
               animation-name: fadeup;
-              animation-duration: 1s;
-              
+              animation-duration: 1s; 
+              color: white;
+              text-decoration:none;
             }
   
             nav{
@@ -67,17 +68,23 @@
               }
 
 
+              .title-image{
+                margin: 0;
+                display: block;
+                width: 100%;
+                animation-name: fadeup;
+                animation-duration: 2s;
+              }
 
-
-              .project{
-
+              .project-title{
                 width: 50%;
                 margin: auto;
-                padding-top: 5vh;
+                padding-top: 10vh;
                 padding-bottom: 5vh;
-                font-weight: 600;
-                font-size: 4vh;
+                font-weight: 700;
+                font-size: 6vh;
               }
+
               .body h1, h2, h3, h4, h5, h6{
                 font-family: 'Manrope', sans-serif;  
               }
