@@ -1,18 +1,9 @@
 
-
-jQuery(document).ready(function ($) {
-    $(window).load(function () {
-        setTimeout(function(){
-            $('#preloader').fadeOut('slow', function () {
-            });
-        },7000); // set the time here
-    });  
-});
-
 //Smooth Scroll
 const scroll = new SmoothScroll('.nav-links, .arrow, #work, a[href*="#"]' ,{
     speed: 900
 });
+
 
 //Text Fade
 const text = document.querySelector(".intro-text",);
