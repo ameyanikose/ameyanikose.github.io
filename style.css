@@ -312,7 +312,7 @@ main{
             }
             .work{
               grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
-              grid-template-rows: repeat(auto-fit, minmax(350px,1fr));
+              grid-template-rows: repeat(auto-fit, minmax(300px,1fr));
             }
           }
 
@@ -416,18 +416,3 @@ main{
             }
           }
 
-/* 
-          #myVideo {
-            scale: 0.1;
-          }
-          .video{
-          position: absolute;
-          justify-content: center;
-          width: 10px;
-          height: 10px;
-          opacity: 10%;
-          }
-      
-          .drift{
-            scale: 0.5;
-          } */
