@@ -41,8 +41,10 @@ function complete() {
 
 //Filter
 
-$(document).ready(function () {
+// $(document).ready(function () {
+  // alert(1)
   $(".proj-nav-link").click(function () {
+    // alert(2)
     const name = $(this).attr("data-filter");
     if (name == "all") {
       $(".card-container").hide().fadeIn(500);
@@ -69,17 +71,17 @@ $(document).ready(function () {
         .fadeIn(500);
     }
   });
-});
+// });
 
 $(".proj-links a").click(function () {
   $(this).addClass("active").siblings().removeClass("active");
 });
 
 //Show more
-$(document).ready(function () {
+// $(document).ready(function () {
   $(".show-more").click(function () {
     $(".card-container-hidden").css("display", "block").hide().fadeIn(500);
     $(".show-more").hide();
     $(".work").css("padding-bottom", "10vh");
   });
-});
+// });
