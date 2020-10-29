@@ -83,7 +83,7 @@ section {
   padding-top: 10vh;
   padding-bottom: 5vh;
   animation-name: fadeup;
-  animation-duration: 4s;
+  animation-duration: 8s;
 }
 .intro-text {
   padding-top: 15vh;
@@ -91,13 +91,9 @@ section {
   animation-name: fadeup;
   animation-duration: 2s;
 }
-
-/* #abcd {
-  padding-top: 15vh;
-  color: white;
-  animation-name: fadeup;
-  animation-duration: 2s;
-} */
+.blank{
+  padding: 15vh;
+}
 
 /* Projects */
 .projects {

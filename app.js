@@ -31,7 +31,7 @@ document.getElementById("abcd").innerHTML += "<span>" + splitText[i] + "</span>"
 }
 
 let char = 0;
-let timer = setInterval(onTick, 15);
+let timer = setInterval(onTick, 20);
 
 function onTick() {
   const span = document.querySelectorAll("span")[char];
@@ -47,7 +47,6 @@ function complete() {
   clearInterval(timer);
   timer = null;
 }
-
 
 
 //Filter
