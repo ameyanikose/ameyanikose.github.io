@@ -92,6 +92,13 @@ section {
   animation-duration: 2s;
 }
 
+/* #abcd {
+  padding-top: 15vh;
+  color: white;
+  animation-name: fadeup;
+  animation-duration: 2s;
+} */
+
 /* Projects */
 .projects {
   display: flex;
