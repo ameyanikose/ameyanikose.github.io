@@ -47,7 +47,7 @@ function complete() {
   clearInterval(timer);
   timer = null;
 }
-
+$(".blank").hide();
 
 //Filter
 
