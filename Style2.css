@@ -132,11 +132,13 @@ h6 {
   font-size: 4vh;
   padding-top: 5vh;
   padding-bottom: 3vh;
+  line-height: 5vh;
 }
 .body h2 {
   font-weight: 600;
   font-size: 3vh;
-  padding-bottom: 1vh;
+  padding-top: 2vh;
+  /* padding-bottom: 1vh; */
 }
 .body {
   font-family: "Literata", serif;
