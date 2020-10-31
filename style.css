@@ -253,8 +253,14 @@ footer {
   font-weight: 600;
 }
 .footer-text a {
-  color: #9c9c9c;
+  color: white;
   text-decoration: none;
+}
+.footer-text a:hover{
+  color:#9c9c9c;
+  text-decoration: none;
+  animation-name: fade2;
+  animation-duration: 0.2s;
 }
 
 /* Introduction Animation and Other Animations */
@@ -288,6 +294,15 @@ span {
   }
   to {
     color: black;
+  }
+}
+@keyframes fade2 {
+  from {
+    color: white;
+    transition: all 1s ease;
+  }
+  to {
+    color: #9c9c9c;
   }
 }
 
