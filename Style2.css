@@ -152,6 +152,12 @@ h6 {
   line-height: 3.6vh;
 }
 
+ul.list {
+  list-style: circle;
+  list-style-position: inside;
+  line-height: 5vh;
+}
+
 .image {
   padding-top: 3vh;
   width: 100%;
