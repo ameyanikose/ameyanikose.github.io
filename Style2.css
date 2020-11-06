@@ -118,6 +118,18 @@ main {
   color: #9c9c9c;
 }
 
+.detail a{
+  color: #9c9c9c;
+  text-decoration: none; 
+}
+
+.detail a:hover{
+  color:black;
+  text-decoration: none;
+  animation-name: fade3;
+  animation-duration: 0.5s;
+}
+
 .body h1,
 h2,
 h3,
@@ -232,6 +244,16 @@ footer {
   }
   to {
     color: #9c9c9c;
+  }
+}
+
+@keyframes fade3 {
+  from {
+    color: #9c9c9c;
+    transition: all 1s ease;
+  }
+  to {
+    color: black;
   }
 }
 /* Responsivity */
