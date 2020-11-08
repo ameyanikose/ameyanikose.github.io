@@ -61,6 +61,13 @@ nav {
   text-decoration: none;
 }
 
+.nav-link:hover {
+  color: white;
+  text-decoration: none;
+  animation-name: fade3;
+  animation-duration: 0.5s;
+}
+
 main {
   padding: 0%;
   margin: 0%;
@@ -71,8 +78,8 @@ main {
   margin: 0;
   display: block;
   width: 100%;
-  animation-name: fadeup;
-  animation-duration: 2s;
+  /* animation-name: fadeup2;
+  animation-duration: 1s; */
 }
 .image2{
   margin:0;
@@ -140,7 +147,7 @@ h6 {
 }
 
 .body h1 {
-  font-weight: 700;
+  font-weight: 650;
   font-size: 4vh;
   padding-top: 5vh;
   padding-bottom: 3vh;
@@ -161,7 +168,7 @@ h6 {
   padding-right: 5%;
   font-weight: 400;
   font-size: 2.1vh;
-  line-height: 3.6vh;
+  line-height: 3.7vh;
 }
 
 ul.list {
@@ -237,6 +244,16 @@ footer {
     transform: translateY(0px);
   }
 }
+@keyframes fadeup2 {
+  from {
+    opacity: 0;
+    transition: all 1s ease;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 @keyframes fade2 {
   from {
     color: white;
@@ -256,35 +273,51 @@ footer {
     color: black;
   }
 }
+@keyframes fade4 {
+  from {
+    color: #9c9c9c;
+    transition: all 1s ease;
+  }
+  to {
+    color: white;
+  }
+}
 /* Responsivity */
 
 @media screen and (max-width: 1280px) {
-  section {
-    font-size: 40px;
+  header {
+    width: 60%;
+    margin: auto;
   }
+  
   .logo {
     font-size: 22px;
   }
-  .work {
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(350px, 1fr));
+  .title{
+    width: 60%;
   }
+  .body{
+    width: 60%;
+  }
+  
 }
 
 @media screen and (max-width: 1024px) {
-  section {
-    font-size: 38px;
+  header {
+    width: 70%;
+    margin: auto;
   }
-
   .nav-links {
-    font-size: 15px;
+    font-size: 16px;
   }
   .logo {
     font-size: 20px;
   }
-  .project {
+  .title{
     width: 70%;
-    font-size: 28px;
+  }
+  .body{
+    width: 70%;
   }
 }
 
@@ -293,39 +326,42 @@ footer {
     width: 70%;
     margin: auto;
   }
-  section {
-    width: 70%;
-    margin: auto;
-    font-size: 36px;
-  }
   .logo {
     font-size: 18px;
   }
 
   .nav-links {
-    font-size: 14px;
+    font-size: 16px;
   }
-}
-
+  .title{
+    width: 80%;
+  }
+  .body{
+    width: 80%;
+  }
+  }
+ 
 @media screen and (max-width: 665px) {
   header {
     width: 80%;
     margin: auto;
   }
-  section {
-    width: 80%;
-    margin: auto;
-    font-size: 28px;
-  }
   .work {
     width: 90%;
   }
-  .nav-links {
-    font-size: 12px;
+  
+  nav{
+    flex: 0.5;
   }
-  .project {
-    width: 80%;
-    font-size: 24px;
+  .nav-links {
+    font-size: 14px;
+  }
+ 
+  .title{
+    width: 85%;
+  }
+  .body{
+    width: 85%;
   }
 
   .footer-text {
@@ -342,13 +378,17 @@ footer {
     width: 80%;
     margin: auto;
   }
-  section {
-    width: 80%;
-    margin: auto;
-    font-size: 24px;
-  }
-  .work {
+  .title{
     width: 90%;
+  }
+  .body{
+    width: 90%;
+  }
+  .logo {
+    flex: 0.8;
+  }
+  nav{
+    flex: 0.7;
   }
   .nav-links {
     font-size: 12px;

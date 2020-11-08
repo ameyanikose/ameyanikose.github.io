@@ -48,6 +48,7 @@ nav {
 
 .nav-links {
   justify-content: space-around;
+  /* align-content: flex-end; */
   list-style: none;
   width: 100%;
   padding-left: 20%;
@@ -60,6 +61,14 @@ nav {
   color: #9c9c9c;
   text-decoration: none;
 }
+
+.nav-link:hover {
+  color: white;
+  text-decoration: none;
+  animation-name: fade3;
+  animation-duration: 0.5s;
+}
+
 main {
   padding: 0%;
   margin: 0%;
@@ -91,7 +100,7 @@ section {
   animation-name: fadeup;
   animation-duration: 2s;
 }
-.blank{
+.blank {
   padding: 15vh;
 }
 
@@ -256,8 +265,8 @@ footer {
   color: white;
   text-decoration: none;
 }
-.footer-text a:hover{
-  color:#9c9c9c;
+.footer-text a:hover {
+  color: #9c9c9c;
   text-decoration: none;
   animation-name: fade2;
   animation-duration: 0.2s;
@@ -303,6 +312,15 @@ span {
   }
   to {
     color: #9c9c9c;
+  }
+}
+@keyframes fade3 {
+  from {
+    color: #9c9c9c;
+    transition: all 1s ease;
+  }
+  to {
+    color: white;
   }
 }
 
@@ -356,7 +374,7 @@ span {
   }
 
   .nav-links {
-    font-size: 14px;
+    font-size: 16px;
   }
   .proj-links {
     width: 70%;
@@ -376,8 +394,11 @@ span {
   .work {
     width: 90%;
   }
+  nav {
+    flex: 0.5;
+  }
   .nav-links {
-    font-size: 12px;
+    font-size: 14px;
   }
   .projects {
     width: 80%;
@@ -410,6 +431,12 @@ span {
   }
   .work {
     width: 90%;
+  }
+  .logo {
+    flex: 0.8;
+  }
+  nav {
+    flex: 0.6;
   }
   .nav-links {
     font-size: 12px;
