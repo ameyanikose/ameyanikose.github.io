@@ -68,7 +68,7 @@ nav {
 .nav-link:hover {
   color: white;
   text-decoration: none;
-  animation-name: fade3;
+  animation-name: fade4;
   animation-duration: 0.5s;
 }
 
