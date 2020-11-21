@@ -173,14 +173,14 @@ h6 {
 }
 
 .body h1 {
-  font-weight: 650;
+  font-weight: 700;
   font-size: 4vh;
   padding-top: 5vh;
   padding-bottom: 3vh;
   line-height: 5vh;
 }
 .body h2 {
-  font-weight: 600;
+  font-weight: 650;
   font-size: 3vh;
   padding-top: 2vh;
   /* padding-bottom: 1vh; */
@@ -228,7 +228,7 @@ ul.list {
   width: 50%;
   margin: auto;
   justify-items: center;
-  padding-bottom: 10vh;
+  padding-bottom: 5vh;
 }
 
 .card-container {
@@ -293,6 +293,47 @@ ul.list {
   /* opacity: 70%; */
 }
 
+.show-all {
+  display: flex;
+  margin: auto;
+  width: 50%;
+  justify-content: center;
+  color: #9c9c9c;
+  font-weight: 600;
+  font-size: 16px;
+  padding-bottom: 7vh;
+  cursor: pointer;
+}
+.show-all-2{
+  display: flex;
+  margin: auto;
+  width: 50%;
+  justify-content: center;
+  color: #9c9c9c;
+  font-weight: 600;
+  font-size: 16px;
+  padding-bottom: 7vh;
+  cursor: pointer;
+}
+.show-all a{
+  text-decoration: none;
+  color: #9c9c9c;
+}
+.show-all-2 a{
+  text-decoration: none;
+  color: #9c9c9c;
+}
+.show-all :hover {
+  color: black;
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+.show-all-2 :hover {
+  color: white;
+  animation-name: fade4;
+  animation-duration: 0.5s;
+}
 
 /* Footer */
 footer {
