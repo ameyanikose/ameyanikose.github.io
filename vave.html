@@ -161,7 +161,7 @@
       data-aos-duration="2200"
       data-aos-once="true"
     >
-      <h1>Inspiration for creating an Instrument</h1>
+      <h1>Inspirations for creating an Instrument</h1>
       <p>
         To create an enjoyable experience, we again dived deeper and looked for
         existing technical music instruments and bodily experiences to create
@@ -273,27 +273,33 @@
         learn about and quickly prototype different interaction techniques in
         AR/VR/MR. As we did not have access to existing controllers, we had to
         look at other alternatives.<br /><br />
-        We looked at methods to interact without a controller, like using a
-        raycast reticle to point and shoot using a phone, using virtual buttons
-        on an image marker in AR, and using onscreen buttons in AR. We also
-        tried to make our own controllers with simple sensors like
-        accelerometer, gyroscope, and ultrasonic sensor and map hand movements
-        recorded through them to different musical variables.
       </p>
+
+      <h2>Figuring Out Ways to Interact</h2>
+      <br />
+      We looked at methods to interact without a controller, like using a
+      raycast reticle to point and shoot using a phone, using virtual buttons on
+      an image marker in AR, and using onscreen buttons in AR. <br /><br />
+      <h2>VR Gaze</h2>
+      <br />
+      One simple way to interact in VR was by using the accelerometer of the
+      phone and the Raycast Reticle feature in Google VR SDK that tracks where
+      the person is looking/ gazing and triggers a pre-defined interaction with
+      that element. Here in our prototype, when a person gazes at a cube, the
+      cube changes its color from white to red and if the person continues to
+      stare for a specified time limit, it changes to black.
+
       <br />
     </div>
 
     <div data-aos="fade" data-aos-duration="2200" data-aos-once="true">
       <img class="image2" src="vave/vr gaze.png" />
       <p class="description">
-        <i>VR Gaze with Raycast Reticle </i>
-      </p>
-    </div>
-
-    <div data-aos="fade" data-aos-duration="2200" data-aos-once="true">
-      <img class="image2" src="vave/vr ar screen.jpg" />
-      <p class="description">
-        <i>Vr + AR Screen </i>
+        <i
+          >VR Gaze with Raycast Reticle : A simple inbuilt interaction but
+          moving around a lot to point the phone at elements in space could be
+          tiring.
+        </i>
       </p>
     </div>
 
@@ -304,11 +310,13 @@
       data-aos-once="true"
     >
       <br />
+      <h2>On-screen buttons in AR</h2>
+      <br />
       <p>
-        We also prototyped wearable AR by making a stereoscopic AR camera in
-        Unity. This helped in having a tracker-based AR with virtual buttons, at
-        the same time keeping your hands free, unlike hand-held AR using a
-        mobile device.
+        In our next prototype, some keys pop up in the AR space and when these
+        are pressed on the screen, a song is played. The learning from this
+        exercise was; although in AR, the experience was like any other 2D
+        application and not enjoyable.
       </p>
       <br />
       <br />
@@ -323,9 +331,34 @@
           allowfullscreen
         ></iframe>
       </div>
+    </div>
+    <div
+      class="body"
+      data-aos="fade"
+      data-aos-duration="2200"
+      data-aos-once="true"
+    >
       <br />
+      <h2>Mixed-Reality and Virtual Buttons</h2>
       <br />
+      <p>
+        We also prototyped wearable AR by making a stereoscopic AR camera in
+        Unity. This helped in having a tracker-based AR with virtual buttons, at
+        the same time keeping your hands free, unlike hand-held AR using a
+        mobile device. As the hands were free, we could add some virtual buttons
+        in the 3D world space that could be interacted with using our hands. The
+        learning from this exercise was; interactions became more immersive but
+        the virtual buttons only work when visible through the camera.
+      </p>
+      <br />
+    </div>
 
+    <div
+      class="body"
+      data-aos="fade"
+      data-aos-duration="2200"
+      data-aos-once="true"
+    >
       <div data-aos="fade" data-aos-duration="2200" data-aos-once="true">
         <iframe
           src="https://drive.google.com/file/d/1Hhr9VtV-WVZbDr6d5KZX1w6ri7e1fQdN/preview"
@@ -338,6 +371,33 @@
       </div>
       <br />
       <br />
+      <h2>Making Our Own Controllers</h2>
+      <br />
+      <p>
+        We also tried to make our own controllers with simple sensors like
+        accelerometer, gyroscope, and ultrasonic sensor and map hand movements
+        recorded through them to different musical variables. The learning from
+        this exercise was; as the sensors were independent from AR camera, one
+        could look anywhere while interacting with the controllers. This also
+        enabled a more tangible mode of interacting and we decided to go further
+        with this.
+      </p>
+      <br />
+      <br />
+      <div data-aos="fade" data-aos-duration="2200" data-aos-once="true">
+        <iframe
+          src="https://drive.google.com/file/d/1YtswqbRBc06HIv_NWGx6rzUJRau01JQi/preview"
+          width="100%"
+          height="400vh"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <br />
+      <br />
+      <h2>Audio Helm, Using VST for Instrument</h2>
+      <br />
       <p>
         Another challenge was to produce musical sounds in Unity based on the
         feedback from sensors/ virtual buttons/ raycast. We used the Audio Helm
@@ -346,6 +406,32 @@
         generative music. We then tweaked the code to control audio helm
         variables according to the input from sensors to make it interactive
         with gestures.
+      </p>
+    </div>
+    <div data-aos="fade" data-aos-duration="2200" data-aos-once="true">
+      <img class="image2" src="vave/Audio Helm.png" />
+      <p class="description">
+        <i>Audio Helm VST</i>
+      </p>
+      <br />
+      <br />
+    </div>
+
+    <div
+      class="body"
+      data-aos="fade"
+      data-aos-duration="2200"
+      data-aos-once="true"
+    >
+      <h2>Visualizations</h2>
+      <br />
+      <p>
+        Simultaneously we also explored creating visualizations for the
+        instrument that will be visible on the VR headset. One of the
+        visualizations was a large number of instances of a sphere with a
+        glowing material. The amount of glow, gravity, and scatter were linked
+        according to different frequencies. These visualizations would later
+        serve while creating an immersive experience for the player.
       </p>
       <br />
       <br />
@@ -360,15 +446,6 @@
         ></iframe>
       </div>
       <br />
-      <br />
-      <p>
-        Simultaneously we also explored creating visualizations for the
-        instrument that will be visible on the VR headset. One of the
-        visualizations was a large number of instances of a sphere with a
-        glowing material. The amount of glow, gravity, and scatter were linked
-        according to different frequencies. These visualizations would later
-        serve while creating an immersive experience for the player.
-      </p>
       <br />
     </div>
 
@@ -393,16 +470,23 @@
         took inspiration from the Mr. Bean video.
       </p>
       <br />
-      <h2>Discrete Vs Continuous Music</h2>
-      <br />
-      <p>
-        One of the decisions that we had to make was whether to put a smooth
-        transition between two semitones (like in a theremin) or to jump
-        directly between semitones. Finally, after testing both the scenarios,
-        we decided to put just the semitones as the notes between two semitones
-        were difficult to play.
+    </div>
+    <div data-aos="fade" data-aos-duration="2200" data-aos-once="true">
+      <img class="image2" src="vave/how to play.jpg" />
+      <p class="description">
+        <i>How to Play: Using gestures to control parameters.</i>
       </p>
       <br />
+      <br />
+    </div>
+    <br />
+
+    <div
+      class="body"
+      data-aos="fade"
+      data-aos-duration="2200"
+      data-aos-once="true"
+    >
       <h2>Implementation - Wearable</h2>
       <br />
       <p>
@@ -424,6 +508,23 @@
         <i>Alternate Concept for a Wearable Instrument</i>
       </p>
       <br />
+      <br />
+    </div>
+    <div
+      class="body"
+      data-aos="fade"
+      data-aos-duration="2200"
+      data-aos-once="true"
+    >
+      <h2>Discrete Vs Continuous Music</h2>
+      <br />
+      <p>
+        One of the decisions that we had to make was whether to put a smooth
+        transition between two semitones (like in a theremin) or to jump
+        directly between semitones. Finally, after testing both the scenarios,
+        we decided to put just the semitones as the notes between two semitones
+        were difficult to play.
+      </p>
       <br />
     </div>
     <div
@@ -466,14 +567,6 @@
       <img class="image2" src="vave/front view.jpg" />
       <p class="description">
         <i>Top, Bottom and Front View of the Instrument. </i>
-      </p>
-      <br />
-      <br />
-    </div>
-    <div data-aos="fade" data-aos-duration="2200" data-aos-once="true">
-      <img class="image2" src="vave/how to play.jpg" />
-      <p class="description">
-        <i>How to Play: Using gestures to control parameters.</i>
       </p>
       <br />
       <br />
